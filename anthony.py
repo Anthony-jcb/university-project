@@ -8,9 +8,9 @@ def root():
     return render_template('index.html')
 
 
-@app.route('/información')
+@app.route('/informacion')
 def acerca():
-    return render_template('información')
+    return render_template('informacion.html')
 
 
 if __name__ == '__main__':
