@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/css/index.css" />
+    <title>Calculadora AJCB</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="brand-container">
+          <span class="nav-brand">AJCB</span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="/">inicio</a></li>
+          <li><a href="/informacion">información</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="calculator-brand">
+      <h1>CALCULADORA AJCB</h1>
+    </div>
+
+    <div class="calculator">
+      <div class="calculator-background">
+        <div class="background"></div>
+      </div>
+
+      <div class="calculator-body">
+        <div class="screen-container">
+          <div class="screen-limit">
+            <input type="text" id="resultado"/>
+            <input id="memoria" type="hidden">
+          </div>
+        </div>
+
+          <div class="button-container">
+            <button id="divide">/</button>
+            <button id="multiply" onClick="operaciones('multiplicar'); return false;">x</button>
+            <button id="substract" onClick="operaciones('restar'); return false;">-</button>
+            <button id="addition" onClick="operaciones('sumar'); return false;">+</button>
+            <button id="clear" onClick="resultado.value = '';" =>C</button>
+            <button id="result" onClick="operaciones('igual'); return false;">=</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../static/js/index.js"></script>
+  </body>
+</html>

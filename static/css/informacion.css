@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "montserratbold";
+  src: url("../font/montserrat-bold-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.nav {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  box-shadow: 0px 0px 10px -3px rgba(0, 0, 0, 0.5);
+}
+
+.nav-brand {
+  color: rgb(26 115 232);
+  font-size: 20px;
+}
+
+.brand-container {
+  margin-left: 15px;
+  font-family: 'montserratbold';
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  margin-right: 15px;
+  font-family: "montserratbold";
+  font-size: 20px;
+}
+
+.nav-menu li a {
+  color: rgb(26 115 232);
+  text-decoration: none;
+  padding-left: 15px;
+}
+
+.informacion {
+  font-size: 20px;
+  font-family: 'montserratbold';
+  margin: 15px;
+}
